@@ -53,7 +53,7 @@ The baseball coaches and batters can use the prediction model to make a better b
   * b_score: The current score of the batter team
   * p_score: The current score of the pitcher team
   * date: The date and year of the game
-  * stand: The bat side of the player
+  * stand: The batting side of the player
   
 >* What dataset(s) do you plan to use, and how will you obtain the data?
 >* What is an individual sample/unit of analysis in this project? What characteristics/features do you expect to work with?
