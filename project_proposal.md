@@ -10,14 +10,14 @@ The baseball coaches and batters can use the prediction model to make a better b
 
 #### Data Description:
 * Dataset: 
-  * MLB Pitch data between 2015 and 2019 will be used.
+  * MLB Pitch data between 2015 and 2018 will be used.
   * Data source:
       * [Kaggle](https://www.kaggle.com/pschale/mlb-pitch-data-20152018)
   * Data size: 
-      * Total 3595944 pitches between 2015 and 2019 in MLB with 66 columns if we combine the csv files but some columns of data was missing in 2019
-      * The data of 16312 pitches by Max Scherzer between 2015 and 2019 will be used
+      * Total 3,595,944 pitches between 2015 and 2019 in MLB with 66 columns if we combine the csv files but I've found some columns of data was missing and incorrect in 2019
+      * The data of 13,534 pitches by Max Scherzer between 2015 and 2018 will be used
   * Supplemental data:
-      * Scraping the pitch data from 2008 to current of Max Scherzer which will be 41277 pitches with 14 columns on [Baseball Savant](https://baseballsavant.mlb.com/statcast_search) to complete some data in 2019
+      * Scraping the pitch data from 2008 to current of Max Scherzer which will be 41,277 pitches with 14 columns on [Baseball Savant](https://baseballsavant.mlb.com/statcast_search)
  
 * An individual sample/unit (total 66 columns):
 
@@ -38,7 +38,7 @@ The baseball coaches and batters can use the prediction model to make a better b
 * Expected characteristics/features to work with (total 18 columns):
   * pitch_type: The most probable pitch type according to a neural net classification algorithm developed by Ross Paul of MLBAM. Max Scherzer has 5 main types of pitches which are four-seam fastball, slider, changeup, curveball and cutter.  
   * type_confidence: The value of the weight at the classification algorithm’s output node corresponding to the most probable pitch type, this value is multiplied by a factor of 1.5 if the pitch is known by MLBAM to be part of the pitcher’s repertoire.
-  * zone: Zone 1 to 9 are the strike zones, and zone 11 to 14 are not within the strike zone. From the catcher’s view, zone 1, 4 and 7 are inside to a right handed batter from top to the bottom, zone 3, 6 and 9 are inside to a left handed batter, and zone 2, 5 and 8 are in the middle. Zone 11, 12, 13 and14 locate outside the corners of 1, 3, 7 and 9.
+  * zone: Zone 1 to 9 are the strike zones, and zone 11 to 14 are not within the strike zone. From the catcher’s view, zone 1, 4 and 7 are inside to a right handed batter from top to the bottom, zone 3, 6 and 9 are inside to a left handed batter, and zone 2, 5 and 8 are in the middle. Zone 11, 12, 13 and 14 locate outside the corners of 1, 3, 7 and 9.
   * code: The codes of the result of the pitch
   * b_count: The current number of balls on the batter
   * s_count: The current number of strikes on the batter
@@ -47,13 +47,15 @@ The baseball coaches and batters can use the prediction model to make a better b
   * on_1b: 1 indicates there was a runner on the first base
   * on_2b: 1 indicates there was a runner on the second base
   * on_3b: 1 indicates there was a runner on the third base
-  * event: The detail result of the pitch
+  * event: The detailed result of the plate appearance
   * inning: The current inning
   * top: 1 indicates this inning was top
   * b_score: The current score of the batter team
   * p_score: The current score of the pitcher team
   * date: The date and year of the game
   * stand: The batting side of the player
+  * start_time: The start time of the game
+  * weather: The weather and the temperature at the beginning of the game
   
 >* What dataset(s) do you plan to use, and how will you obtain the data?
 >* What is an individual sample/unit of analysis in this project? What characteristics/features do you expect to work with?
