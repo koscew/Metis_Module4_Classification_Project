@@ -23,4 +23,4 @@ Top Inning|0.0026|0.948
 
 The [Charts of EDA on Tableau Public](https://public.tableau.com/app/profile/koscew/viz/Scherzer/Game_pitch?publish=yes) shows there were more fastball when the count of the balls were two or three, the count of the strikes were less than two, no runners on second or third bases, the batters were batting left-handed, last pitch was not a fastball, the temperature was under 70 degree, and last pitch was in play.
 
-I will continue with feature selections and feature engineering and try other models like Random Forests and Boosts and also Stacking to find the best prediction model.
+I will continue with feature selections and feature engineering and try other models like KNN, Random Forests and Boosts and also Stacking to find the best prediction model.
