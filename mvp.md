@@ -3,7 +3,7 @@
 
 The goal of this project is to build a classification model to predict whether a pitcher will pitch a fastball under certain game situations. Max Scherzer is the pitcher I am going to predict. The batters can be better prepared if they know fastball is likely coming. 
 
-To start exploring this goal, I downloaded pitch-by-pitch data between 2015-2019 from [Kaggle](https://www.kaggle.com/pschale/mlb-pitch-data-20152018) and did the web scraping to pitch-by-pitch data of Max Scherzer from 2008 to 2021 from [Baseball Savant](https://baseballsavant.mlb.com/statcast_search). I used a logistic regression model with 10 features to build the baseline model. The accuracy was 60.3% and the accuracy of time-series cross-validation was 59.5% while the percentage of the fastball usage in the training data was 58.7% and in the time-series cross-validation was 58.6%. Below are the features and their coefficients and p-values.
+To start exploring this goal, I downloaded pitch-by-pitch data between 2015-2019 from [Kaggle](https://www.kaggle.com/pschale/mlb-pitch-data-20152018) and did the web scraping to pitch-by-pitch data of Max Scherzer from 2008 to 2021 from [Baseball Savant](https://baseballsavant.mlb.com/statcast_search). The data of 13,534 pitches by Max Scherzer between 2015 and 2018 was used due to missing and incorrect data in 2019. I used a logistic regression model with 10 features to build the baseline model. The accuracy was 60.3% and the accuracy of time-series cross-validation was 59.5% while the percentage of the fastball usage in the training data was 58.7% and in the time-series cross-validation was 58.6%. Below are the features and their coefficients and p-values.
 
 
 Features|Coefficient|P-Value
