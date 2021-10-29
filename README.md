@@ -13,6 +13,8 @@ This is the fourth project of Metis Data Science Bootcamp. We're going to build 
 
 [Codes](codes/)
 
+[Tableau Public](https://public.tableau.com/app/profile/koscew/viz/Scherzer/Last_pitch) (EDA)
+
 ***
 
 [Charts](images/)
