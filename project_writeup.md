@@ -85,7 +85,6 @@ Naive Bayes|0.611|0.601
 - SQLite3 for creating database and table and importing csv into table
 - Python SQLAlchemy for querying from the database into Python
 - Tableau Public, Python Matplotlib and Python Seaborn for exploratory data analysis and data visualization
--  for data analysis and data visualization
 - Python Scikit-learn, Statsmodels, Xgboost, and Mlxtend for classification models
 
 
